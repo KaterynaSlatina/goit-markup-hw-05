@@ -706,7 +706,24 @@ margin-right: 120px;
    transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+ 
+.footer-container-subscribe {
+   margin-left: 80px;
 
+}
+
+.subscribe-field {
+}
+
+.subscribe-input {
+   background-color: transparent;
+   width: 264px;
+   height: 40px;
+   border-radius: 4px;
+   border: 1px solid var(--inner-color);
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+   margin-left: 0;
+}
 
 /*Modal styles*/
 
@@ -865,3 +882,4 @@ border-color: var(--brand-color);
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
       color: var(--inner-color);
 }
+
