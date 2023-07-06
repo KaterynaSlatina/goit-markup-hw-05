@@ -710,12 +710,15 @@ margin-right: 120px;
 .footer-container-subscribe {
    margin-left: 80px;
 
+
 }
 
 .subscribe-field {
+
 }
 
 .subscribe-input {
+   color: var(--inner-color);
    background-color: transparent;
    width: 264px;
    height: 40px;
@@ -723,8 +726,17 @@ margin-right: 120px;
    border: 1px solid var(--inner-color);
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
    margin-left: 0;
+   padding-top: 8px;
+   padding-left: 16px;
+   padding-bottom: 8px;
 }
 
+.footer-button {
+   width: 165px;
+   height: 40px;
+   color: var(--inner-color);
+   background-color: var(--brand-color);
+}
 /*Modal styles*/
 
 .backdrop {
@@ -829,7 +841,7 @@ form {
 }
 
 .modal-form-field {
-   position: relative;
+position: relative;
 display: block;
 margin-bottom: 8px;
 width: 360px;
@@ -869,6 +881,73 @@ border-color: var(--brand-color);
 
 .modal-form-input:focus + .modal-form-icon {
    fill: var(--brand-color);
+}
+
+.modal-form-comment {
+   color: var(--navyblue-modal, --input-modal-color);
+   font-size: 12px;
+   letter-spacing: 0.48px;
+   width: 100px;
+   padding: 8px 16px;
+   resize: none;
+   border-radius: 4px;
+   border: 1px solid var(--main-color);
+   outline: transparent;
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-comment::placeholder {
+   color: currentColor;
+}
+
+.modal-form-comment:focus {
+   border-color: var(--brand-color);
+}
+
+.modal-form-agreement {
+display: flex;
+align-items: center;
+margin-bottom: 24px;
+gap: 8px;
+}
+
+.modal-form-checkbox {
+
+}
+
+.modal-form-custom-checkbox {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 16px;
+   height: 16px;
+   border-radius: 2px;
+   border: 1px solid rgba(46, 47, 66, 0.40);
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-checkbox-icon {
+opacity: 0;
+}
+
+.modal-form-checkbox:checked + .modal-form-custom-checkbox {
+border-color: var(--hover-color);
+background-color: var(--hover-color);
+
+}
+
+.modal-form-checkbox:checked + .modal-form-custom-checkbox >
+.modal-form-checkbox-icon {
+opacity: 1;
+}
+
+.modal-form-agreement-desc {
+user-select: none;
+}
+
+.modal-form-link {
+color: var(--brand-color);
+text-decoration: underline;
 }
 
 .button-send {
