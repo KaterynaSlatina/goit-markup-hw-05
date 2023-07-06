@@ -860,6 +860,10 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
+.modal-form-container-label {
+   margin-bottom: 16px;
+}
+
 .modal-form-container-input {
 position: relative;
 }
@@ -942,9 +946,10 @@ margin-bottom: 24px;
 }
 
 .modal-form-agreement {
-display: flex;
-align-items: center;
-gap: 8px;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: var(--customers-color);
 }
 
 .modal-form-checkbox {
