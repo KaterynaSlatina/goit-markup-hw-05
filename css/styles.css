@@ -983,17 +983,16 @@ color: var(--customers-color);
 opacity: 0;
 }
 
-.modal-form-checkbox:checked + .modal-form-custom-checkbox {
+.modal-form-checkbox:checked+.modal-form-agreement .modal-form-custom-checkbox {
 border:none;
 background-color: var(--hover-color);
 fill: var(--footer-color);
 
 }
-
-.modal-form-checkbox:checked + .modal-form-custom-checkbox >
-.modal-form-checkbox-icon {
-opacity: 1;
+.modal-form-checkbox:checked + .modal-form-custom-checkbox > .modal-form-checkbox-icon {
+   opacity: 1;
 }
+
 
 .modal-form-agreement-desc {
 user-select: none;
